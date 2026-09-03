@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Demo</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NETFLIX</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited Movies, TV Shows and More</h1>
+
+            <p>
+                Watch anywhere. Cancel anytime.
+            </p>
+
+            <button>Watch Now</button>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Popular on Netflix</h2>
+
+        <div class="movies">
+
+            <div class="movie-card">
+                <h3>Stranger Things</h3>
+            </div>
+
+            <div class="movie-card">
+                <h3>Money Heist</h3>
+            </div>
+
+            <div class="movie-card">
+                <h3>Wednesday</h3>
+            </div>
+
+            <div class="movie-card">
+                <h3>Dark</h3>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
