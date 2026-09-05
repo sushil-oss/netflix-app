@@ -1,3 +1,4 @@
+```yaml
 name: Build and deploy Python app to Azure Web App - netflix-demo-sushil-2026
 
 on:
@@ -26,7 +27,6 @@ jobs:
           python-version: '3.13'
 
       - name: Create virtual environment and install dependencies
-        working-directory: ./netflix-demo
         run: |
           python -m venv antenv
           source antenv/bin/activate
@@ -38,8 +38,8 @@ jobs:
         with:
           name: python-app
           path: |
-            netflix-demo
-            !netflix-demo/antenv/
+            .
+            !antenv/
 
   deploy:
     runs-on: ubuntu-latest
@@ -68,4 +68,5 @@ jobs:
         with:
           app-name: 'netflix-demo-sushil-2026'
           slot-name: 'Production'
-          package: './netflix-demo'
+          package: .
+```
