@@ -1,4 +1,3 @@
-```yaml
 name: Build and deploy Python app to Azure Web App - netflix-demo-sushil-2026
 
 on:
@@ -69,4 +68,3 @@ jobs:
           app-name: 'netflix-demo-sushil-2026'
           slot-name: 'Production'
           package: .
-```
